@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Sistema web - Sistema Integrado de Saúde - Meus Agendamentos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/a003e7e3bf.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+    <!-- jQuery Snippet 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <!-- JS -->
+    <script src="src/js/dark-mode.js"></script>
+</head>
+
+<body>
+    <header><!-- Início cabecalho -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #011804;">
+            <div class="container">
+                <a href="index.html" class="navbar-brand filtro">
+                    <img src="img\logo.png" class="mr-2">UBS
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\sus.png" class="mr-2">SUS - Sistema Único
+                                de Saúde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\govsp.png" class="mr-2">Secretaria da
+                                Saúde - SP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\munsp.png" class="mr-2">Saúde - São
+                                Paulo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!--/ Fim cabecalho -->
+
+    <section><!-- Início seção1 -->
+        <div class="container pt-3" style="margin-top: 130px;"><!-- Início container1 -->
+            <div class="row"><!-- Iníco da row-->
+                <div class="col-md-8"><!---->
+                    <h1 class="text-capitalize" style="padding-top: 100px;">
+                        <i class="fa-regular fa-calendar-days pr-3"></i>Meus Agendamentos
+                    </h1>
+                </div><!---->
+
+                <!-- Início menu-->
+                <div class="col-md-4 mt-2 row align-self-start justify-content-end">
+                    <div class="dropdown"><!-- Início dropdown -->
+                        <a class="btn text-dark dropdown-toggle" href="" data-toggle="dropdown">Olá, <span
+                                class="font-weight-bold">Usuário</span></a>
+                        <div class="dropdown-menu">
+                            <a class="btn text-dark dropdown-item" href="pagina3.html"><i
+                                    class="fa-regular fa-calendar-days pr-2"></i>Home</a>
+                            <a class="btn text-dark dropdown-item" href="index.html"><i
+                                    class="fa-solid fa-right-from-bracket pr-2"></i>Sair</a>
+                        </div>
+                    </div><!--/ Fim dropdown -->
+                </div><!--/ Fim menu -->
+            </div><!--/ Fim da row -->
+        </div><!--/ Fim container1 -->
+
+        <div class="container pt-3"><!-- Início container2 -->
+            <div class="row"><!-- Início da row -->
+                <div class="col-md-8"><!-- Início consulta -->
+                    <ol class="border border-dark">
+                        <!-- Início data da consulta1 -->
+                        <div class="col-md-12 row justify-content-center pt-2">
+                            <span style="font-size: 1.3em;">
+                                <li>Data da Consulta</li>
+                            </span>
+                        </div>
+
+                        <div class="row"><!-- Início da row -->
+                            <div class="col-md-6 row align-self-center">
+                                <ul style="list-style: none;">
+                                    <li>08:00 hs</li>
+                                    <li>12/03/2025</li>
+                                    <li>Quarta-Feira</li>
+                                    <li>Dr. Fulano</li>
+                                    <li>Clínico Geral</li>
+                                </ul>
+                            </div>
+
+                            <div class="row justify-content-center"><!-- Início do alinhamento horizontal botões -->
+                                <div class="col-md-6 align-self-center"><!-- Início alinhamento vertical botões-->
+                                    <div>
+                                        <button class="btn btn-outline-dark mt-4 mb-4"><i
+                                                class="fa-solid fa-print pr-2"></i>Imprimir
+                                            Consulta</button>
+                                        <button class="btn btn-outline-danger mt-4 mb-4" data-toggle="modal"
+                                            data-target="#cancelarAgendamento"><i
+                                                class="fa-solid fa-rectangle-xmark pr-2"></i>Cancelar
+                                            Consulta</button>
+                                    </div>
+                                </div><!--/ Fim alinhamento vertical botões-->
+                            </div><!--/Fim do alinhamento horizontal botões -->
+                        </div><!--/ Fim da row -->
+
+                        <!-- Iníco do modal -->
+                        <div class="modal fade" id="cancelarAgendamento" tabindex="-1" role="dialog"
+                            aria-labelledby="cancelar" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Você realmente deseja cancelar esta consulta?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="pagina3.html" class="btn btn-secondary">Sim</a>
+                                        <a href="" class="btn btn-secondary">Não</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Fim modal -->
+                        <!--/ Fim data da consulta1 -->
+
+                        <!-- Início data da consulta2 -->
+                        <div
+                            class="col-md-12 row justify-content-center pt-2 border border-dark border-left-0 border-right-0 border-bottom-0">
+                            <span style="font-size: 1.3em;">
+                                <li>Data da Consulta</li>
+                            </span>
+                        </div>
+
+                        <div class="row"><!-- Início da row -->
+                            <div class="col-md-6 row align-self-center">
+                                <ul style="list-style: none;">
+                                    <li>10:00 hs</li>
+                                    <li>12/03/2025</li>
+                                    <li>Quarta-Feira</li>
+                                    <li>Dr. Sicrano</li>
+                                    <li>Ortopedista</li>
+                                </ul>
+                            </div>
+
+                            <div class="row justify-content-center"><!-- Início do alinhamento horizontal botões -->
+                                <div class="col-md-6 align-self-center"><!-- Início alinhamento vertical botões-->
+                                    <div>
+                                        <button class="btn btn-outline-dark mt-4 mb-4"><i
+                                                class="fa-solid fa-print pr-2"></i>Imprimir
+                                            Consulta</button>
+                                        <button class="btn btn-outline-danger mt-4 mb-4" data-toggle="modal"
+                                            data-target="#cancelarAgendamento"><i
+                                                class="fa-solid fa-rectangle-xmark pr-2"></i>Cancelar
+                                            Consulta</button>
+                                    </div>
+                                </div><!--/ Fim alinhamento vertical botões-->
+                            </div><!--/Fim do alinhamento horizontal botões -->
+                        </div><!--/ Fim da row -->
+
+                        <!-- Iníco do modal -->
+                        <div class="modal fade" id="cancelarAgendamento" tabindex="-1" role="dialog"
+                            aria-labelledby="cancelar" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Você realmente deseja cancelar esta consulta?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="pagina3.html" class="btn btn-secondary">Sim</a>
+                                        <a href="" class="btn btn-secondary">Não</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Fim modal -->
+                        <!--/ Fim data da consulta2 -->
+                    </ol>
+                    <!-- Início da paginação -->
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a href="" class="page-link text-dark">Anterior</a>
+                            </li>
+                            <li class="page-item active">
+                                <a href="" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="" class="page-link text-dark">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="" class="page-link text-dark">Próximo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--/ Fim da paginação -->
+                </div><!--/ Fim consulta -->
+
+                <!-- Início botão imprimir meus agendamentos -->
+                <div class="col-md-4">
+                    <div class="row justify-content-center">
+                        <button class="btn btn-lg btn-outline-dark"><i class="fa-solid fa-print pr-2"></i>Imprimir
+                            Meus Agendamentos</button>
+                    </div>
+                </div>
+                <!--/ Fim botão imprimir meus agendamentos -->
+
+            </div><!--/ Fim da row -->
+        </div><!--/ Fim container2 -->
+    </section><!--/ Fim seção1 -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

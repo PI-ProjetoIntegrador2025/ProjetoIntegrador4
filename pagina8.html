@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Sistema web - Sistema Integrado de Saúde - Meus Dados</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/a003e7e3bf.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+    <!-- jQuery Snippet 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="src/js/dark-mode.js"></script>
+</head>
+
+<header><!-- Início cabecalho -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #011804;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand filtro">
+                <img src="img\logo.png" class="mr-2">UBS
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link filtro" href=""><img src="img\sus.png" class="mr-2">SUS - Sistema Único
+                            de Saúde</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link filtro" href=""><img src="img\govsp.png" class="mr-2">Secretaria da
+                            Saúde - SP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link filtro" href=""><img src="img\munsp.png" class="mr-2">Saúde - São
+                            Paulo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header><!--/ Fim cabecalho -->
+
+<section><!-- Início seção1 -->
+    <!-- Início container1 -->
+    <div class="container fixed-top pt-3 " style="margin-top: 126px; background: white;">
+        <div class="row border border-dark border-top-0 border-left-0 border-right-0">
+            <!-- Iníco da row-->
+            <div class="col-md-8" style="padding-top: 100px;"><!---->
+                <h1 class="text-capitalize">
+                    <i class="fa-regular fa-pen-to-square pr-3"></i>meus dados
+                </h1>
+            </div><!---->
+
+            <!-- Início menu-->
+            <div class="col-md-4 mt-2 row align-self-start justify-content-end">
+                <div class="dropdown"><!-- Início dropdown -->
+                    <a class="btn text-dark dropdown-toggle" href="" data-toggle="dropdown">Olá, <span
+                            class="font-weight-bold">Usuário</span></a>
+                    <div class="dropdown-menu">
+                        <a class="btn text-dark dropdown-item" href="pagina3.html"><i
+                                class="fa-regular fa-calendar-days pr-2"></i>Home</a>
+                        <a class="btn text-dark dropdown-item" href="index.html"><i
+                                class="fa-solid fa-right-from-bracket pr-2"></i>Sair</a>
+                    </div>
+                </div><!--/ Fim dropdown -->
+            </div><!--/ Fim menu -->
+        </div><!--/ Fim da row -->
+    </div><!--/ Fim container1 -->
+
+    <div class="container" style="margin-top: 325px;"><!-- Início container2 -->
+        <!-- Início formulário -->
+        <div><!---->
+            <h4 class="text-capitalize">formulário:</h4>
+            <p class="font-italic">*Obrigatório</p>
+            <form>
+                <div class="form-group col-md-12">
+                    <label class="text-capitalize" for="name">nome*</label>
+                    <input class="form-control" type="text" id="name" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label class="text-capitalize" for="namesocial">nome social</label>
+                    <input class="form-control" type="text" id="name social" placeholder="Nome social">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label class="text-uppercase" for="cpf">RG*</label>
+                    <input class="form-control" type="text" id="cpf" placeholder="Digite seu RG">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label class="text-capitalize" for="datanascimento">Data de Nascimento*</label>
+                    <input class="form-control" type="text" id="cpf" placeholder="ex: 05/08/2000">
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label class="text-capitalize" for="selecione">selecione*</label>
+                    <select class="form-control" name="selecione" id="selecione">
+                        <option value="">Rua</option>
+                        <option value="">Avenida</option>
+                        <option value="">Viela</option>
+                        <option value="">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-inline col-md-12">
+                    <label class="mr-2" for="">*</label>
+                    <input class="form-control col-md-6 mr-2" type="text" id="endereco"
+                        placeholder="Digite seu endereço">
+                    <label class="mr-2" for="">*</label>
+                    <input class="form-control col-md-2 mr-2" type="text" id="numero" placeholder="Número">
+                    <input class="form-control col-md-3 mr-2" type="text" id="complemento" placeholder="Complemento">
+                </div>
+
+                <div class="mt-3 form-group col-md-10">
+                    <label for="email">email</label>
+                    <input class="form-control" type="text" id="email" placeholder="Digite seu email">
+                </div>
+
+                <div class="row justify-content-start pl-3"><!--Início telefones -->
+                    <div class="form-group col-md-4">
+                        <label class="text-capitalize" for="celular">celular</label>
+                        <input class="form-control" type="text" id="celular" placeholder="+5511xxxxxxx">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label class="text-capitalize" for="rtelefone">telefone residencial</label>
+                        <input class="form-control" type="text" id="rtelefone" placeholder="(11)xxxxxxx">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label class="text-capitalize" for="ctelefone">telefone comercial</label>
+                        <input class="form-control" type="text" id="ctelefone" placeholder="(xx)xxxxxxx">
+                    </div>
+                </div><!--/ Fim telefones -->
+            </form>
+        </div><!---->
+        <!--/ Fim formulário-->
+    </div><!--/ Fim container2 -->
+
+    <div class="container"><!-- Início container3 -->
+        <div class="row justify-content-end"><!-- Início da row -->
+            <!-- Início botões -->
+            <a href="pagina3.html" class="btn btn-secondary m-4">Cancelar</a>
+            <input type="submit" class="btn btn-primary m-4" data-toggle="modal" data-target="#alterarDados"
+                value="Confirmar">
+            <!--/ Fim botões -->
+
+            <!-- Início dos modais -->
+            <!-- Início modal confirmar -->
+            <div class="modal fade" id="alterarDados" tabindex="-1" role="dialog" aria-labelledby="alt_Dados"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="alt_Dados">Alterar dados</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Você deseja confirmar a alteração?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                            <a id="pagina1M2" href="pagina3.html"><button id="salvarP2" type="button"
+                                    class="btn btn-primary">Salvar
+                                    dados</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim modal confirmar -->
+            <!--/ Fim dos modais -->
+        </div><!--/ Fim container3 -->
+</section><!--/ Fim seção1 -->
+
+<!-- JavaScript (Opcional) -->
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

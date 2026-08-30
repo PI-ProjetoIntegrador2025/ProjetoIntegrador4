@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Sistema web - Sistema Integrado de Saúde - Página Principal</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/a003e7e3bf.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+    <!-- jQuery Snippet 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <!-- JS -->
+    <script src="src/js/dark-mode.js"></script>
+</head>
+
+<body>
+    <header><!-- Início cabecalho -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #011804;">
+            <div class="container">
+                <a href="index.html" class="navbar-brand filtro">
+                    <img src="img\logo.png" class="mr-2">UBS
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\sus.png" class="mr-2">SUS - Sistema Único
+                                de Saúde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\govsp.png" class="mr-2">Secretaria da
+                                Saúde - SP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\munsp.png" class="mr-2">Saúde - São
+                                Paulo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Botão do modo escuro -->
+                <button id="darkModeToggle" title="Alternar modo escuro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header><!--/ Fim cabecalho -->
+
+    <section style="padding-top: 125px;"><!-- Início seção1 -->
+        <div class="caixa_section4 row align-items-center"><!-- Início da caixa_section -->
+            <div class="container"><!-- Início container1 -->
+                <div class="row align-items-center"><!-- Início da row1 -->
+                    <div class="bg-primary col-md-8 caixa_ubs mt-2 pt-4 pb-4">
+                        <h1 class="display-5 text-center">
+                            Sistema Integrado de Saúde
+                        </h1>
+                    </div>
+
+                    <div class="mt-2 col-md-4">
+                        <div class="row justify-content-end">
+                            <button class="btn btn-lg btn-outline-dark pb-3 active" type="button" id="autenticacao">
+                                Entre ou Cadastre-se
+                            </button>
+                        </div>
+                    </div>
+                </div><!--/ Fim da row1 -->
+
+                <div class="row align-items-center justify-content-end"><!-- Início row2 -->
+                    <div class="autenticacao caixa_form col-md-4 border border-dark mt-3"><!-- Início acesse -->
+                        <p class="lead font-italic">Acesse com seu RG e Senha:</p>
+                        <form>
+                            <div class="form-group ml-2 mt-2">
+                                <input type="text" class="form-control is-valid" id="cpf" placeholder="RG">
+                                <div class="valid-feedback">
+                                    RG válido
+                                </div>
+                            </div>
+
+                            <div class="form-group ml-2">
+                                <input type="text" class="form-control is-valid" id="senha" placeholder="Senha">
+                                <div class="valid-feedback">
+                                    Senha Válida
+                                </div>
+                            </div>
+
+                            <div>
+                                <a id="entrar" type="submit" class="ml-2 mb-2 btn btn-primary"
+                                    href="pagina3.html">Entrar</a>
+                            </div>
+                        </form>
+                    </div><!--/ Fim acesse -->
+
+                    <!-- Início cadastre-se -->
+                    <div class="autenticacao caixa_form col-md-4 border border-dark border-left-0 mt-3">
+                        <p class="lead font-italic">Cadastre-se:</p>
+                        <form>
+                            <div class="form-group pl-2">
+                                <input type="text" class="form-control is-valid" id="cpf" placeholder="RG">
+                                <div class="valid-feedback">
+                                    RG válido
+                                </div>
+                            </div>
+
+                            <div class="pl-2">
+                                <a id="avancar" type="submit" class="btn btn-primary" href="pagina2.html">Avançar</a>
+                            </div>
+                        </form>
+                    </div><!--/ Fim cadastra-se -->
+                </div><!--/ Fim da row2 -->
+            </div><!--/ Fim container1 -->
+        </div><!--/ Fim caixa_section4 -->
+    </section><!--/ Fim seção1 -->
+
+    <section><!-- Início seção2 -->
+        <div class="caixa_section5 bg-primary"></div>
+    </section><!--/ Fim seção2 -->
+
+    <footer><!-- Início rodapé -->
+        <div class="container"><!-- Início container1 -->
+            <div class="row"><!-- Início da row-->
+                <div class="col-md-4 pl-0">
+                    <h5>UBS</h5>
+
+                    <ul class="pl-0">
+                        <li>Rua</li>
+                        <li>Telefone: (11) xxxx-xxxx</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pl-0">
+                    <h5>Contatos</h5>
+
+                    <ul class="pl-0">
+                        <li><i class="fa-solid fa-phone pr-2"></i>---</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="row justify-content-end">Redes Sociais</h5>
+                    <div class="row justify-content-end">
+                        <ul>
+                            <li class="social">
+                                <a href="">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="">
+                                    <i class="fa-brands fa-square-x-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/ Fim da row -->
+        </div><!--/ Fim container1 -->
+    </footer><!--/ Fim rodapé -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript (Autenticação) -->
+    <script src="src\js\pagina1-js.js"></script>
+
+    <!-- JavaScript (Modo escuro) -->
+    <script>
+        const toggle = document.getElementById('darkModeToggle');
+        const icon = toggle.querySelector('i');
+        const body = document.body;
+
+        toggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const dark = body.classList.contains('dark-mode');
+            icon.className = dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+            localStorage.setItem('darkMode', dark);
+        });
+
+        // essa partee é pra manter o tema que foi escolhido!
+        if (localStorage.getItem('darkMode') === 'true') {
+            body.classList.add('dark-mode');
+            icon.className = 'fa-solid fa-sun';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+/*Estilos diversos*/
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.marcador {
+    background: rgb(143, 115, 115);
+    height: 225px;
+}
+
+.fundo {
+    background: rgb(118, 118, 151);
+}
+
+.caixa_section {
+    /*border: 1px solid #262fae;*/
+    height: 350px;
+}
+
+.caixa_section1 {
+    /*border: 1px solid #262fae;*/
+    height: 550px;
+}
+
+.caixa_section2 {
+    /*border: 1px solid #262fae;*/
+    height: 300px;
+}
+
+.caixa_section3 {
+    /*border: 1px solid #262fae;*/
+    height: 380px;
+}
+
+.caixa_section4 {
+    /*border: 1px solid #262fae;*/
+    height: 450px;
+}
+
+.caixa_section5 {
+    /*border: 1px solid #262fae;*/
+    height: 240px;
+}
+
+.caixa_ubs {
+    /*border: 1px solid #262fae;*/
+    border-radius: 25px;
+}
+
+.caixa_form {
+    /*border: 1px solid #262fae;*/
+    height: 280px;
+}
+
+.caixa_cadastro {
+    /*border: 1px solid #262fae;*/
+    height: 250px;
+}
+
+.autenticacao {
+    background: white;
+}
+
+.filtro:hover {
+    filter: brightness(200%);
+}
+
+.agendamento {
+    /*background: rgb(143, 115, 115);*/
+    height: 225px;
+}
+
+.calendario {
+    background: rgb(226, 226, 226);
+    width: 200px;
+    height: 300px;
+}
+
+/*Barra navegação*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #6d9186;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-dark .navbar-brand {
+    color: #6d9186;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: white;
+}
+
+/*Calendário*/
+.diasDaSemana li {
+    width: calc(100% / 7);
+}
+
+.dias li {
+
+    width: calc(100% / 7);
+}
+
+header .icone span:hover {
+    background: rgb(55, 127, 196);
+    cursor: pointer;
+}
+
+.dias li.desativo {
+    color: rgb(190, 188, 188);
+}
+
+.dias li.ativo {
+    color: rgb(64, 137, 206);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.dias li.cad:hover {
+    background: rgb(88, 88, 88);
+    cursor: pointer;
+    color: white;
+}
+
+/*Rodapé*/
+footer {
+    background: #1d1c22;
+    padding: 30px 0px 20px 0px;
+}
+
+footer h5 {
+    color: #6d9186;
+}
+
+footer li {
+    color: #6d9186;
+}
+
+footer i {
+    color: #6d9186;
+}
+
+
+footer h5 {
+    font-size: 1.1em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li.social {
+    float: right;
+    margin: 0 5px;
+    font-size: 1.1em;
+}
+
+footer ul li i:hover {
+    color: white;
+}
+
+/* #1d1c22 #44a190*/

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Sistema web - Sistema Integrado de Saúde - Alterar Senha</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/a003e7e3bf.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+    <!-- jQuery Snippet 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <!-- JS -->
+    <script src="src/js/dark-mode.js"></script>
+</head>
+
+<body>
+    <header><!-- Início cabecalho -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #011804;">
+            <div class="container">
+                <a href="index.html" class="navbar-brand filtro">
+                    <img src="img\logo.png" class="mr-2">UBS
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\sus.png" class="mr-2">SUS - Sistema Único
+                                de Saúde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\govsp.png" class="mr-2">Secretaria da
+                                Saúde - SP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filtro" href=""><img src="img\munsp.png" class="mr-2">Saúde - São
+                                Paulo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!--/ Fim cabecalho -->
+
+    <section><!-- Início seção1 -->
+        <div class="container pt-3 mb-2" style="margin-top: 130px;"><!-- Início container1 -->
+            <div class="row"><!-- Iníco da row-->
+                <div class="col-md-8"><!---->
+                    <h1 class="text-capitalize" style="padding-top: 100px;"></h1>
+                </div><!---->
+
+                <!-- Início menu-->
+                <div class="col-md-4 mt-2 row align-self-start justify-content-end">
+                    <div class="dropdown"><!-- Início dropdown -->
+                        <a class="btn text-dark dropdown-toggle" href="" data-toggle="dropdown">Olá, <span
+                                class="font-weight-bold">Usuário</span></a>
+                        <div class="dropdown-menu">
+                            <a class="btn text-dark dropdown-item" href="pagina3.html"><i
+                                    class="fa-regular fa-calendar-days pr-2"></i>Home</a>
+                            <a class="btn text-dark dropdown-item" href="index.html"><i
+                                    class="fa-solid fa-right-from-bracket pr-2"></i>Sair</a>
+                        </div>
+                    </div><!--/ Fim dropdown -->
+                </div><!--/ Fim menu -->
+            </div><!--/ Fim da row -->
+        </div><!--/ Fim container1 -->
+
+        <div class="container"><!-- Início container1 -->
+            <div class="row justify-content-center">
+                <div class="border border-secondary col-md-7">
+                    <div class="col-md-8">
+                        <h5 class="pt-5 pb-4">Alterar senha:</h5>
+                        <form class="pb-5" action="">
+                            <div class="form-group">
+                                <label for="atSenha">Senha atual:</label>
+                                <input class="form-control" type="text" id="atSenha">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nvSenha">Nova senha:</label>
+                                <input class="form-control" type="text" id="nvSenha">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cfSenha">Confirmar senha:</label>
+                                <input class="form-control" type="text" id="cfSenha">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!--/ Fim container1 -->
+
+        <div class="container"><!-- Início container2 -->
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="row justify-content-end">
+                        <a id="" href="pagina3.html"><button class="btn btn-secondary m-4">Cancelar</button></a>
+                        <a id="" href="index.html"><Button class="btn btn-primary mt-4 mb-4">Confirmar</Button></a>
+                    </div>
+                </div>
+            </div>
+        </div><!--/ Fim container2 -->
+    </section><!--/ Fim seção1 -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
