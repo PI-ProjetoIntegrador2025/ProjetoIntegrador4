@@ -1,9 +1,9 @@
-yaml
-name: Deploy_GitHub_Pages
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main] # TRAVA O DEPLOY APENAS PARA A MAIN
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Pasta de index.html na raiz (.) do projeto
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
