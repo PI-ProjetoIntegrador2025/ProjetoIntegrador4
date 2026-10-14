@@ -1,5 +1,5 @@
 yaml
-name: Deploy GitHub Pages
+name: Deploy_GitHub_Pages
 
 on:
   push:
