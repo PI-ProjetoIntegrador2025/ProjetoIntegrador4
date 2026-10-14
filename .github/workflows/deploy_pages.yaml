@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # Mantém o  botão de disparo manual ativado com segurança
 
 permissions:
   contents: read
@@ -12,7 +13,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true 
 
 jobs:
   deploy:
@@ -31,6 +32,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+          retention-days: 1 # Limpa o artefato rapidamente para não acumular lixo na memória
 
       - name: Deploy to GitHub Pages
         id: deployment
