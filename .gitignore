@@ -1,0 +1,7 @@
+# Base bruta da PNS (445 MB, passa do limite do GitHub): não versionar
+PNS_2013*/
+*.zip
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/

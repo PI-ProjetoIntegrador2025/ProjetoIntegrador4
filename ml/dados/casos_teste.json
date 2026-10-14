@@ -1,0 +1,182 @@
+[
+ {
+  "entrada": {
+   "idade": 43.0,
+   "sexo_masc": 0.0,
+   "imc": 21.4,
+   "cintura": 48.0,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "PE"
+  },
+  "prob_minimo": 0.2973900618839806,
+  "prob_estendido": 0.08827455226654837,
+  "score_minimo": 3,
+  "score_estendido": 1
+ },
+ {
+  "entrada": {
+   "idade": 31.0,
+   "sexo_masc": 1.0,
+   "imc": 25.7,
+   "cintura": 92.5,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "RN"
+  },
+  "prob_minimo": 0.17490079835514466,
+  "prob_estendido": 0.15159156659678028,
+  "score_minimo": 2,
+  "score_estendido": 2
+ },
+ {
+  "entrada": {
+   "idade": 32.0,
+   "sexo_masc": 1.0,
+   "imc": 26.3,
+   "cintura": 92.5,
+   "diabetes": 0.0,
+   "fuma": 1.0,
+   "uf": "PB"
+  },
+  "prob_minimo": 0.18001901118531535,
+  "prob_estendido": 0.20845196380942854,
+  "score_minimo": 2,
+  "score_estendido": 2
+ },
+ {
+  "entrada": {
+   "idade": 30.0,
+   "sexo_masc": 0.0,
+   "imc": 31.2,
+   "cintura": 104.0,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "MT"
+  },
+  "prob_minimo": 0.1420054358277031,
+  "prob_estendido": 0.2090257259339895,
+  "score_minimo": 1,
+  "score_estendido": 2
+ },
+ {
+  "entrada": {
+   "idade": 36.0,
+   "sexo_masc": 0.0,
+   "imc": 25.8,
+   "cintura": 80.0,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "GO"
+  },
+  "prob_minimo": 0.22107378219968696,
+  "prob_estendido": 0.16319066155911768,
+  "score_minimo": 2,
+  "score_estendido": 2
+ },
+ {
+  "entrada": {
+   "idade": 28.0,
+   "sexo_masc": 1.0,
+   "imc": 24.3,
+   "cintura": 87.0,
+   "diabetes": 1.0,
+   "fuma": 0.0,
+   "uf": "SE"
+  },
+  "prob_minimo": 0.17210287277726188,
+  "prob_estendido": 0.25365458214099285,
+  "score_minimo": 2,
+  "score_estendido": 3
+ },
+ {
+  "entrada": {
+   "idade": 58.0,
+   "sexo_masc": 0.0,
+   "imc": 24.1,
+   "cintura": 85.0,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "PE"
+  },
+  "prob_minimo": 0.5201965986751592,
+  "prob_estendido": 0.40415031804611784,
+  "score_minimo": 5,
+  "score_estendido": 4
+ },
+ {
+  "entrada": {
+   "idade": 47.0,
+   "sexo_masc": 1.0,
+   "imc": 20.8,
+   "cintura": 77.0,
+   "diabetes": 0.0,
+   "fuma": 1.0,
+   "uf": "AC"
+  },
+  "prob_minimo": 0.3245464921413541,
+  "prob_estendido": 0.20730965353559822,
+  "score_minimo": 3,
+  "score_estendido": 2
+ },
+ {
+  "entrada": {
+   "idade": 31.0,
+   "sexo_masc": 0.0,
+   "imc": 22.9,
+   "cintura": 73.5,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "AL"
+  },
+  "prob_minimo": 0.15865917427700327,
+  "prob_estendido": 0.08277134968655492,
+  "score_minimo": 2,
+  "score_estendido": 1
+ },
+ {
+  "entrada": {
+   "idade": 56.0,
+   "sexo_masc": 0.0,
+   "imc": 21.9,
+   "cintura": 71.0,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "PA"
+  },
+  "prob_minimo": 0.36272439679056945,
+  "prob_estendido": 0.19552985479733054,
+  "score_minimo": 4,
+  "score_estendido": 2
+ },
+ {
+  "entrada": {
+   "idade": 75.0,
+   "sexo_masc": 1.0,
+   "imc": 22.2,
+   "cintura": 74.0,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "MG"
+  },
+  "prob_minimo": 0.7849833203417561,
+  "prob_estendido": 0.5910553384833722,
+  "score_minimo": 8,
+  "score_estendido": 6
+ },
+ {
+  "entrada": {
+   "idade": 45.0,
+   "sexo_masc": 0.0,
+   "imc": 24.2,
+   "cintura": 80.0,
+   "diabetes": 0.0,
+   "fuma": 0.0,
+   "uf": "MG"
+  },
+  "prob_minimo": 0.3272120161633826,
+  "prob_estendido": 0.23078623412039756,
+  "score_minimo": 3,
+  "score_estendido": 2
+ }
+]

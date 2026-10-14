@@ -117,56 +117,100 @@
 							Triagem) - Conceito Inicial:</h5>
 					</label>
 
-					<form action="">
+					<form id="form-risco" novalidate>
 						<div class="row mb-3">
 
 							<div class="col-md-4">
 								<div class="card">
-									<div class="card-header">
-										Município
-									</div>
+									<div class="card-header">Estado (UF)</div>
 									<div class="card-body">
-										<h5 class="card-title">
-											<input class="form-control form-control is-valid" type="text" maxlength="3"
-												id="diastole" placeholder="ex: São Paulo">
-											<div class="valid-feedback small">
-												Valor válido
-											</div>
-										</h5>
+										<select class="form-control" id="entrada-uf">
+											<option value="">Selecione</option>
+										</select>
 									</div>
 								</div>
 							</div>
 
 							<div class="col-md-2">
 								<div class="card">
-									<div class="card-header">
-										Estado
-									</div>
+									<div class="card-header">Idade</div>
 									<div class="card-body">
-										<h5 class="card-title">
-											<input class="form-control form-control is-valid" type="text" maxlength="2"
-												id="diastole" placeholder="ex: SP">
-											<div class="valid-feedback small">
-												Valor válido
-											</div>
-										</h5>
+										<input class="form-control" type="number" min="18" max="120" step="1" id="entrada-idade"
+											placeholder="ex: 38">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-header">Sexo</div>
+									<div class="card-body">
+										<select class="form-control" id="entrada-sexo">
+											<option value="">Selecione</option>
+											<option value="0">Feminino</option>
+											<option value="1">Masculino</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<label class="col-form-label text-justify small text-muted">Dados da triagem (opcionais). Preencha
+							<strong>todos</strong> para usar o modelo estendido, mais preciso. A PNS 2013 só identifica o estado
+							(não há município).</label>
+
+						<div class="row mb-3">
+
+							<div class="col-md-2">
+								<div class="card">
+									<div class="card-header">Peso (kg)</div>
+									<div class="card-body">
+										<input class="form-control" type="text" inputmode="decimal" id="entrada-peso" placeholder="ex: 72">
 									</div>
 								</div>
 							</div>
 
 							<div class="col-md-2">
 								<div class="card">
-									<div class="card-header">
-										Idade
-									</div>
+									<div class="card-header">Altura (cm)</div>
 									<div class="card-body">
-										<h5 class="card-title">
-											<input class="form-control form-control is-valid" type="text" maxlength="2"
-												id="diastole" placeholder="ex: 38">
-											<div class="valid-feedback small">
-												Valor válido
-											</div>
-										</h5>
+										<input class="form-control" type="text" inputmode="decimal" id="entrada-altura" placeholder="ex: 168">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="card">
+									<div class="card-header">Cintura (cm)</div>
+									<div class="card-body">
+										<input class="form-control" type="text" inputmode="decimal" id="entrada-cintura" placeholder="ex: 90">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-header">Diagnóstico de diabetes</div>
+									<div class="card-body">
+										<select class="form-control" id="entrada-diabetes">
+											<option value="">Não informado</option>
+											<option value="0">Não</option>
+											<option value="1">Sim</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-header">Fuma atualmente</div>
+									<div class="card-body">
+										<select class="form-control" id="entrada-fuma">
+											<option value="">Não informado</option>
+											<option value="0">Não</option>
+											<option value="1">Sim</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -174,7 +218,7 @@
 						</div>
 
 						<!-- Início botões -->
-						<button type="submit" class="btn btn-primary pr-5 pl-5 m-4">Enter</button>
+						<button type="submit" class="btn btn-primary pr-5 pl-5 m-4">Calcular score</button>
 						<!--/ Fim botões -->
 					</form>
 
@@ -206,33 +250,18 @@
 						Máquina: Supervisionado, Não-Supervisionado, Aprendizado por Reforço, Semisupervisionado,
 						Autosupervisionado, etc;</label>
 
-					<label class="col-sm-9 col-form-label text-justify">3. Determinação do tipo de algoritmo de
+					<label class="col-sm-9 col-form-label text-justify">4. Determinação do tipo de algoritmo de
 						aprendizado: Regressão Linear, Regressão Logística, Árvores de Decisão, etc.</label>
 
 					<label class="col-sm-9 col-form-label">
-						<h6>Conceito:</h6>
+						<h6>Resultado:</h6>
 					</label>
 
-					<label class="col-sm-9 col-form-label text-justify">A aplicação do Modelo de Aprendizado de Máquina
-						recebe e utiliza os dados de entrada do paciente para realizar:</label>
-
-					<label class="col-sm-9 col-form-label text-justify">1. Score do paciente: (ex: 8 pts);</label>
-
-					<label class="col-sm-9 col-form-label text-justify">2. Renderizar uma Mensagem: </label>
-
-					<textarea style="height: 115px" class="col-sm-9 text-justify pt-3"
-						id="">Exemplo: "O score do paciente, 8 pontos, apresenta risco elevado de pré-hipertensão (valores da PA entre 120 x 80 e 139 x 89 mmHg), ou o risco de uma hipertensão – estágio 1 (valores a partir de 140 x 90 mmHg), por gentileza, consulte as instruções de ações preventivas recomendadas abaixo!”</textarea>
-
-					<label class="col-sm-9 col-form-label text-justify">3. Ações preventivas (recomendações), exemplo:
-					</label>
-
-					<label class="col-sm-9 col-form-label text-justify">3.1 Iniciar imediatamente o protocolo MRPA
-						(Medição Residencial da Pressão Arterial) para este paciente;</label>
-
-					<label class="col-sm-9 col-form-label text-justify">3.2 Verificar a conveniência de se
-						aplicar o protocolo MAPA-24 horas (Monitorização Ambulatorial da Pressão Arterial);</label>
-
-					<label class="col-sm-9 col-form-label text-justify">3.3 Etc.</label>
+					<div class="col-sm-9" id="resultado" aria-live="polite">
+						<p class="text-muted text-justify">Preencha os dados do paciente e clique em <strong>Calcular score</strong>.
+							O modelo devolve o <strong>score do paciente</strong> (0 a 10), a faixa de risco, uma mensagem e as
+							<strong>ações preventivas</strong> (recomendações).</p>
+					</div>
 
 					<hr />
 
@@ -253,6 +282,10 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
+	<!-- Modelo de aprendizado de máquina (coeficientes gerados pelo notebook ml/01_limpeza_e_modelo.ipynb) -->
+	<script src="src/data/modelo-dados.js"></script>
+	<script src="src/js/modelo-risco.js"></script>
+	<script src="src/js/pagina300-js.js"></script>
 </body>
 
 </html>
