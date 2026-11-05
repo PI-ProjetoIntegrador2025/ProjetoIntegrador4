@@ -33,6 +33,7 @@
 
 	<!-- JS -->
 	<script src="src/js/dark-mode.js"></script>
+
 </head>
 
 <body>
@@ -116,56 +117,39 @@
 							Triagem) - Conceito Inicial:</h5>
 					</label>
 
-					<form action="">
+					<form id="form-analise" novalidate>
 						<div class="row mb-3">
 
 							<div class="col-md-4">
 								<div class="card">
-									<div class="card-header">
-										Município
-									</div>
+									<div class="card-header">Estado (UF)</div>
 									<div class="card-body">
-										<h5 class="card-title">
-											<input class="form-control form-control is-valid" type="text" maxlength="3"
-												id="diastole" placeholder="ex: São Paulo">
-											<div class="valid-feedback small">
-												Valor válido
-											</div>
-										</h5>
+										<select class="form-control" id="entrada-uf">
+											<option value="">Selecione</option>
+										</select>
 									</div>
 								</div>
 							</div>
 
 							<div class="col-md-2">
 								<div class="card">
-									<div class="card-header">
-										Estado
-									</div>
+									<div class="card-header">Idade</div>
 									<div class="card-body">
-										<h5 class="card-title">
-											<input class="form-control form-control is-valid" type="text" maxlength="2"
-												id="diastole" placeholder="ex: SP">
-											<div class="valid-feedback small">
-												Valor válido
-											</div>
-										</h5>
+										<input class="form-control" type="number" min="18" max="120" step="1"
+											id="entrada-idade" placeholder="38">
 									</div>
 								</div>
 							</div>
 
-							<div class="col-md-2">
+							<div class="col-md-3">
 								<div class="card">
-									<div class="card-header">
-										Idade
-									</div>
+									<div class="card-header">Sexo</div>
 									<div class="card-body">
-										<h5 class="card-title">
-											<input class="form-control form-control is-valid" type="text" maxlength="2"
-												id="diastole" placeholder="ex: 38">
-											<div class="valid-feedback small">
-												Valor válido
-											</div>
-										</h5>
+										<select class="form-control" id="entrada-sexo">
+											<option value="">Selecione</option>
+											<option value="0">Feminino</option>
+											<option value="1">Masculino</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -190,27 +174,143 @@
 					</label>
 
 					<label class="col-sm-9 col-form-label">
-						<h6>Estatística Descritiva:</h6>
+						<h5>Estatística Descritiva:</h5>
 					</label>
 
-					<label class="col-sm-9 col-form-label text-justify">1. Medidas da média, mediana e moda da Pressão
-						Arterial – PA do grupo de risco populacional ao qual o paciente pertence;</label>
+					<div class="row"><!-- Início Análise - Descritiva - Média -->
+						<div class="col">
+							<label class="col-sm-9 col-form-label">
+								<h5>Média:</h5>
+							</label>
 
-					<label class="col-sm-9 col-form-label text-justify">2. Histograma (gráfico de barras) referente ao
-						intervalo de hipertensão (ex: intervalo 1 - pressão normal: até 120 x 80 mmHg ; intervalo 2 -
-						pré-hipertensão - valores entre 120 x 80 mmHg e 139 x 89 mmHg ; etc.) conforme diretrizes
-						publicadas em conjunto pela Sociedade Brasileira de Cardiologia (SBC), Sociedade Brasileira de
-						Nefrologia (SBN) e Sociedade Brasileira de Hipertensão (SBH) (setembro, 2025);</label>
+							<div class="row mb-3">
+
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-header">
+											Sístole ("Pressão Alta") [mmHg]
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												<input class="form-control" type="text" maxlength="3" id="sistole"
+													placeholder="128">
+											</h5>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-header">
+											Diástole ("Pressão Baixa") [mmHg]
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												<input class="form-control" type="text" maxlength="3" id="diastole"
+													placeholder="88">
+											</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div><!-- Fim Análise - Descritiva - Média -->
+
+					<div class="row"><!-- Início Análise - Descritiva - Mediana -->
+						<div class="col">
+							<label class="col-sm-9 col-form-label">
+								<h5>Mediana:</h5>
+							</label>
+
+							<div class="row mb-3">
+
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-header">
+											Sístole ("Pressão Alta") [mmHg]
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												<input class="form-control" type="text" maxlength="3" id="sistole"
+													placeholder="125">
+											</h5>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-header">
+											Diástole ("Pressão Baixa") [mmHg]
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												<input class="form-control" type="text" maxlength="3" id="diastole"
+													placeholder="85">
+											</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div><!-- Fim Analise - Descritiva - Mediana -->
+
+					<div class="row"><!-- Início Análise - Descritiva - Moda -->
+						<div class="col">
+							<label class="col-sm-9 col-form-label">
+								<h5>Moda:</h5>
+							</label>
+
+							<div class="row mb-3">
+
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-header">
+											Sístole ("Pressão Alta") [mmHg]
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												<input class="form-control" type="text" maxlength="3" id="sistole"
+													placeholder="123">
+											</h5>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="card">
+										<div class="card-header">
+											Diástole ("Pressão Baixa") [mmHg]
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												<input class="form-control" type="text" maxlength="3" id="diastole"
+													placeholder="82">
+											</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div><!-- Fim Analise - Descritiva - Moda -->
 
 					<label class="col-sm-9 col-form-label">
-						<h6>Inferência Estatística:</h6>
+						<h5>Inferência Estatística:</h5>
 					</label>
 
-					<label class="col-sm-9 col-form-label text-justify">3. Distribuição Normal: “A aplicação calcula e
-						monta uma distribuição normal baseada nos dados do grupo de risco do paciente, caracterizado
-						pelo filtro (região de residência e idade) fornecido à aplicação no momento de atendimento na
-						recepção.”</label>
+					<label class="col-sm-9 col-form-label">
+						<h5>Distribuição da Pressão Arterial:</h5>
+					</label>
 
+					<img src="img\chart-analise.png" alt="chart-analise">
+
+					
 					<hr />
 
 				</div>
@@ -230,6 +330,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
+
+	<!-- Análise de Dados - Analysis-PA-->
+	<script src="src/js/pagina200-js.js"></script>
 </body>
 
 </html>
