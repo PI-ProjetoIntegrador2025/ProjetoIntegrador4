@@ -164,16 +164,21 @@
 				</div>
 			</div><!-- Fim Entrada Dados -->
 
+			<hr />
+
 			<div class="row"><!-- Início da Análise da Hipertensão Populacional -->
 				<div class="col">
 
-					<hr />
-
 					<label class="col-sm-9 col-form-label">
 						<h5>Análise da Hipertensão Populacional <i>(Dashboard)</i>:</h5>
+
+						<label class="col-form-label text-justify text-muted">OBS: Grupo de Risco Populacional
+							definido a partir dos dados de entrada (Estado, Idade e Sexo).
+						</label>
 					</label>
 
-					<label class="col-sm-9 col-form-label">
+					<!-- Início Análise - Estatística Descritiva -->
+					<label class="col-sm-9 col-form-label mt-3">
 						<h5>Estatística Descritiva:</h5>
 					</label>
 
@@ -298,20 +303,42 @@
 							</div>
 
 						</div>
-					</div><!-- Fim Analise - Descritiva - Moda -->
+					</div><!-- Fim Análise - Descritiva - Moda -->
 
-					<label class="col-sm-9 col-form-label">
+					<div class="row"><!-- Início Análise - Descritiva - Histograma -->
+						<div class="col">
+							<label class="col-sm-9 col-form-label">
+								<h5>Histograma:</h5>
+							</label>
+
+							<div class="row mb-3">
+								<div class="col">
+									<img src="img\chart-histograma.png" alt="chart-analise">
+								</div>
+							</div>
+
+						</div>
+					</div><!-- Fim Análise - Descritiva - Histograma -->
+					<!-- Fim Análise - Estatística Descritiva -->
+
+					<!-- Início Análise - Inferência Estatística -->
+					<label class="col-sm-9 col-form-label mt-3">
 						<h5>Inferência Estatística:</h5>
 					</label>
 
-					<label class="col-sm-9 col-form-label">
-						<h5>Distribuição da Pressão Arterial:</h5>
-					</label>
+					<div class="row">
+						<div class="col">
 
-					<img src="img\chart-analise.png" alt="chart-analise">
+							<label class="col-sm-9 col-form-label">
+								<h5>Distribuição da Pressão Arterial:</h5>
+							</label>
 
-					
-					<hr />
+							<img src="img\chart-distribuicao.png" alt="chart-analise">
+						</div>
+					</div>
+					<!-- Fim Análise - Inferência Estatística -->
+
+					<hr>
 
 				</div>
 			</div><!-- Fim da Análise da Hipertensão Populacional -->
